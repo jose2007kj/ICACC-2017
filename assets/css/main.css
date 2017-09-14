@@ -2359,6 +2359,67 @@
 		position: relative;
 	}
 	/** jose **/
+	
+
+	.dropdown {
+	  /*max-width: 350px;*/
+	  /*margin: 2em auto;*/
+	  background: #990000;
+	}
+
+	.dropdown-title {
+	  position: relative;
+	  background: rgba(0, 0, 0, 0.1);
+	  padding: .5em;
+	  font-weight: 100;
+	  color: #fff;
+	  cursor: pointer;
+	}
+
+	.dropdown-title:before {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  content: "";
+	  background: rgba(0, 0, 0, 0.1);
+	  width: 55px;
+	  height: 100%;
+	  -webkit-transition: .4s .3s;
+	  -moz-transition: .4s .3s;
+	  transition: .4s .3s;
+	}
+
+	.dropdown-title:after {
+	  position: absolute;
+	  top: 10px;
+	  bottom: 0;
+	  right: 20px;
+	  margin: auto;
+	  content: "";
+	  width: 0;
+	  height: 0;
+	  border-top: 8px solid #fff;
+	  border-right: 8px solid transparent;
+	  border-bottom: 8px solid transparent;
+	  border-left: 8px solid transparent;
+	}
+
+	.dropdown-list {
+	  display: none;
+	  list-style: none;
+	  padding: .9em;
+	  color: #fff;
+	  font-weight: 100;
+	  cursor: pointer;
+	}
+
+	.dropdown-list:hover { background: rgba(0, 0, 0, 0.2); }
+
+	.dropdown-list:nth-child(odd) { background: rgba(0, 0, 0, 0.1); }
+
+	.dropdown-list:nth-child(odd):hover { background: rgba(0, 0, 0, 0.2); }
+
 	#myBtn {
 	    display: none; /* Hidden by default */
 	    position: fixed; /* Fixed/sticky position */

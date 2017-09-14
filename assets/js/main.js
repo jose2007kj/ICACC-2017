@@ -5,6 +5,20 @@
 */
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+var trigger = '.trigger';
+var trigger1 = '#tack0';
+var list = '.list';
+function toggleIt() {
+  $('.list').slideToggle(200, 'linear');
+}
+
+$(trigger).on('click', function () {
+	toggleIt();
+});
+$(trigger1).on('click', function () {
+	toggleIt();
+});
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
